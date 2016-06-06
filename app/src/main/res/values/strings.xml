@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">鱼群</string>
+    <string name="common_confirm">确定</string>
+    <string name="common_cancel">取消</string>
+    <string name="common_requesting_time_out">请求超时&#8230;</string>
+    <string name="common_requesting">正在请求&#8230;</string>
+    <string name="common_upload_requesting">图片上传中&#8230;</string>
+    <string name="common_net_notwork">网络不可用&#8230;</string>
+
+    <string name="cube_ptr_pull_down">下拉刷新</string>
+    <string name="cube_ptr_pull_down_to_refresh">下拉刷新</string>
+    <string name="cube_ptr_release_to_refresh">释放刷新</string>
+    <string name="cube_ptr_refreshing">刷新...</string>
+    <string name="cube_ptr_refresh_complete">正在刷新...</string>
+    <string name="cube_ptr_last_update">上次刷新:&#160;</string>
+    <string name="cube_ptr_seconds_ago">&#160;秒钟前</string>
+    <string name="cube_ptr_minutes_ago">&#160;分钟前</string>
+    <string name="cube_ptr_hours_ago">&#160;小时前</string>
+    <!-- 图片浏览 -->
+    <string name="only_choose_num">超出可选图片张数</string>
+    <string name="finish">完成</string>
+    <string name="invalidSD">sdcard无效或没有插入！</string>
+    <string name="photo">选择相册</string>
+    <string name="album">相册</string>
+    <string name="preview">预览</string>
+    <string name="unfinished">完成</string>
+    <string name="camera_cancel">取消</string>
+    <string name="no_photo">相册没有图片</string>
+
+    <!-- 版本检测更新 -->
+
+    <string name="soft_update_no">当前为最新版本</string>
+    <string name="soft_update_title">软件更新</string>
+    <string name="soft_update_info">检测到新版本，立即更新吗</string>
+    <string name="soft_update_updatebtn">更新</string>
+    <string name="soft_update_later">稍后更新</string>
+    <string name="soft_updating">正在更新,请稍后...</string>
+    <string name="soft_update_cancel">取消</string>
+
+    <string name="mine_about_us">鱼群App是专门为鱼群手机用户量身打造的手机兼职赚钱众包平台。方便鱼群用户随时随地快速接单，进行任务交易。提供完整的接单、抢单、奖金提现、用户资料管理等鱼群平台全部功能。赶紧下载鱼群App体验新功能，开启手机赚钱之旅吧！</string>
+</resources>

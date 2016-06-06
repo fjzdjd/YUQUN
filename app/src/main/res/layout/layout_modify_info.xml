@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/maincolor">
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrow_left" />
+
+    <TextView
+        android:id="@+id/tvTop"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:text="修改资料"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+            <LinearLayout
+                android:id="@+id/lv_info_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="手机号："
+                    android:textColor="@color/maincolor"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_info_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="156***8888"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="不可修改"
+                    android:textColor="@color/colorGray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <include layout="@layout/hline" />
+
+            <LinearLayout
+                android:id="@+id/lv_info_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="姓名："
+                    android:textColor="@color/maincolor"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/tv_info_name"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:background="@null"
+                    android:text="张小小"
+                    android:textColor="@color/colorGray"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/hline" />
+
+            <LinearLayout
+                android:id="@+id/lv_info_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="性别："
+                    android:textColor="@color/maincolor"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_info_sex"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:background="@null"
+                    android:text="女"
+                    android:textColor="@color/colorGray"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/hline" />
+
+            <LinearLayout
+                android:id="@+id/lv_info_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="生日："
+                    android:textColor="@color/maincolor"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_info_birth"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:text="1993-06-06"
+                    android:textColor="@color/colorGray"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/hline" />
+
+            <LinearLayout
+                android:id="@+id/lv_info_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="城市："
+                    android:textColor="@color/maincolor"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_info_city"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:text="N南京"
+                    android:textColor="@color/colorGray"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/hline" />
+
+            <LinearLayout
+                android:id="@+id/lv_info_job"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="职业："
+                    android:textColor="@color/maincolor"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_info_job"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:text="其他"
+                    android:textColor="@color/colorGray"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/hline" />
+
+            <LinearLayout
+                android:id="@+id/lv_info_edu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="学历："
+                    android:textColor="@color/maincolor"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_info_edu"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:text="大专/本科"
+                    android:textColor="@color/colorGray"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/hline" />
+
+            <LinearLayout
+                android:id="@+id/lv_info_salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="收入："
+                    android:textColor="@color/maincolor"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_info_salary"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:text="两万以上"
+                    android:textColor="@color/colorGray"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/hline" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="标签："
+                    android:textColor="@color/maincolor"
+                    android:textSize="16sp" />
+
+                <!--<TextView
+                    android:id="@+id/add_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/corners_bg_icon"
+                    android:paddingBottom="1dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="1dp"
+                    android:text="+增加标签"
+                    android:textColor="@color/colorGray"
+                    android:textSize="16sp" />-->
+                <com.yuqun.main.component.CustomAutoChangeLine
+                    android:id="@+id/mine_lyt_original"
+                    android:layout_width="0dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_modify_info"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/corners_bg_orange"
+                android:gravity="center"
+                android:text="保存修改"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

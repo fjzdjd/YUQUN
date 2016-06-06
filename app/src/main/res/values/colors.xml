@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent">#00000000</color>
+    <color name="half_transparent">#8f000000</color>
+    <color name="maincolor">#235FA2</color>
+    <!--<color name="maincolor">#2863a4</color>-->
+    <color name="little_gray">#E8E5E5</color>
+    <color name="backgroundColor">#F7F7F7</color>
+    <color name="backf3f3f3">#f3f3f3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="money">#779cc5</color>
+    <color name="money_text">#5986b7</color>
+    <color name="red">#ff0000</color>
+    <color name="green">#00ff00</color>
+    <color name="orange">#ff9900</color>
+    <color name="orange_text">#ff6402</color>
+    <color name="black">#000000</color>
+    <color name="colorYello">#FF9900</color>
+    <color name="colorGray">#A7A7A7</color>
+    <color name="colorBule_3C71AD">#3C71AD</color>
+    <color name="colorBule_2863A4">#2863A4</color>
+    <color name="yellow">#fed980</color>
+    <color name="none_color">#00000000</color>
+    <color name="plugin_camera_black">#000000</color>
+    <color name="albumback">#E1E0DE</color>
+    <color name="textMain">#666666</color>
+    <color name="blacktext">#444444</color>
+    <color name="lightGreen">#309862</color>
+
+    <color name="round_corner_progress_bar_background_default">#5f5f5f</color>
+    <color name="round_corner_progress_bar_progress_default">#7f7f7f</color>
+    <color name="round_corner_progress_bar_secondary_progress_default">@android:color/transparent
+    </color>
+</resources>

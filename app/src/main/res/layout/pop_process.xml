@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#9000"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/corners_pop"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:background="@drawable/corners_pop_top"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="任务接单流程说明"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:id="@+id/pop_close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="2dp"
+                android:gravity="right|center_vertical"
+                android:src="@mipmap/icon_close"/>
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/img_process"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:orientation="vertical">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/little_gray"/>
+
+    <RadioGroup
+        android:id="@+id/tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="3dp">
+
+        <RadioButton
+            android:id="@+id/footer_rb_task"
+            style="@style/TabMenuText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/footer_tab_renwu"
+            android:gravity="center_horizontal"
+            android:text="任务"
+            android:textColor="@drawable/footer_tab_txt_color"
+            android:textSize="11sp"/>
+
+
+        <RadioButton
+            android:id="@+id/footer_rb_money"
+            style="@style/TabMenuText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1" android:button="@null"
+            android:drawableTop="@drawable/footer_tab_jiangjin"
+            android:gravity="center_horizontal"
+            android:text="奖金"
+            android:textColor="@drawable/footer_tab_txt_color"
+            android:textSize="11sp"/>
+
+        <RadioButton
+            android:id="@+id/footer_rb_invite"
+            style="@style/TabMenuText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/footer_tab_yaoqing"
+            android:gravity="center_horizontal"
+            android:text="邀请"
+            android:textColor="@drawable/footer_tab_txt_color"
+            android:textSize="11sp"/>
+
+        <RadioButton
+            android:id="@+id/footer_rb_mine"
+            style="@style/TabMenuText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/footer_tap_mine"
+            android:gravity="center_horizontal"
+            android:text="我的"
+            android:textColor="@drawable/footer_tab_txt_color"
+            android:textSize="11sp"/>
+    </RadioGroup>
+
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:layout_marginTop="15dp"
+              android:background="@color/backgroundColor"
+              android:orientation="vertical">
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/task_corners_shape"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="0.7dp">
+
+
+        <RadioButton
+            android:id="@+id/task_rb_all"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1.1"
+            android:background="@drawable/task_header_left_shape"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:paddingEnd="0dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="0dp"
+            android:paddingStart="6dp"
+            android:text="可接任务"
+            android:textColor="#fff"
+            android:textSize="12sp"/>
+
+        <RadioButton
+            android:id="@+id/task_rb_on"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:background="@drawable/task_header_selecter"
+            android:button="@null"
+            android:gravity="center"
+            android:text="进行中"
+            android:textColor="@drawable/task_txt_color"
+            android:textSize="12sp"/>
+
+        <RadioButton
+            android:id="@+id/task_rb_audit"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:background="@drawable/task_header_selecter"
+            android:button="@null"
+            android:gravity="center"
+            android:text="审核中"
+            android:textColor="@drawable/task_txt_color"
+            android:textSize="12sp"/>
+
+        <RadioButton
+            android:id="@+id/task_rb_complete"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:background="@drawable/task_header_selecter"
+            android:button="@null"
+            android:gravity="center"
+            android:text="已完成"
+            android:textColor="@drawable/task_txt_color"
+            android:textSize="12sp"/>
+
+        <RadioButton
+            android:id="@+id/task_rb_fail"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1.1"
+            android:background="@drawable/task_header_right_shapef"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingEnd="6dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="6dp"
+            android:paddingStart="0dp"
+            android:text="任务失败"
+            android:textColor="@drawable/task_txt_color"
+            android:textSize="12sp"/>
+
+    </RadioGroup>
+
+
+</LinearLayout>

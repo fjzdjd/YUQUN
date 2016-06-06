@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- <ScrollView
+         android:layout_width="match_parent"
+         android:scrollbars="none"
+         android:layout_height="wrap_content">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/backgroundColor"
+             android:orientation="vertical">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="200dp"-->
+    <!--android:background="@color/maincolor"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_marginTop="30dp"-->
+    <!--android:text="我的奖金"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="18sp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_founds_my"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:text="￥0.88"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="35sp" />-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:text="昨日奖金￥"-->
+    <!--android:textColor="@color/money"-->
+    <!--android:textSize="15sp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_founds_yes"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:text="0.88"-->
+    <!--android:textColor="@color/money"-->
+    <!--android:textSize="15sp" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:text="累计奖金￥"-->
+    <!--android:textColor="@color/money"-->
+    <!--android:textSize="15sp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_founds_leiji"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:text="0.88"-->
+    <!--android:textColor="@color/money"-->
+    <!--android:textSize="15sp" />-->
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_ask_tixian"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="right"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:background="@drawable/corners_bg_all_gray"-->
+    <!--android:paddingBottom="1dp"-->
+    <!--android:paddingLeft="5dp"-->
+    <!--android:paddingRight="5dp"-->
+    <!--android:paddingTop="1dp"-->
+    <!--android:textSize="12sp"-->
+    <!--android:text="提现问答"-->
+    <!--android:textColor="@color/maincolor" />-->
+    <!--</LinearLayout>-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:text="提现金额将汇入到您的微信账户"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:textColor="@color/money_text"-->
+    <!--android:textSize="15sp" />-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:background="@drawable/corners_bg"-->
+    <!--android:layout_marginLeft="30dp"-->
+    <!--android:layout_marginRight="30dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:orientation="horizontal">-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:text="提现金额："/>-->
+    <!--<EditText-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@null"-->
+    <!--android:paddingLeft="5dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:hint="0.00"-->
+    <!--android:textColorHint="@color/orange_text"-->
+    <!--android:textSize="26sp"-->
+    <!--android:textColor="@color/orange_text"-->
+    <!--android:inputType="number"-->
+    <!--android:layout_weight="1"/>-->
+    <!--</LinearLayout>-->
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:background="@drawable/corners_bg_orange"-->
+    <!--android:text="立即提现"-->
+    <!--android:layout_marginLeft="30dp"-->
+    <!--android:layout_marginRight="30dp"-->
+    <!--android:gravity="center"-->
+    <!--android:textSize="20sp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:textColor="@color/white"/>-->
+    <!--<LinearLayout-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<TextView-->
+    <!--android:background="@color/little_gray"-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="1dp" />-->
+    <!--<TextView-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:gravity="center"-->
+    <!--android:textColor="@color/colorGray"-->
+    <!--android:textSize="15sp"-->
+    <!--android:text="我的奖金流水"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
+    <!--<TextView-->
+    <!--android:background="@color/little_gray"-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="1dp" />-->
+    <!--</LinearLayout>-->
+
+    <com.yuqun.main.component.refresh.PtrClassicFrameLayout
+        xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pfl_money"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/maincolor"
+        cube_ptr:ptr_duration_to_close="200"
+        cube_ptr:ptr_duration_to_close_header="1000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="3.5">
+
+        <ListView
+            android:id="@+id/lv_money"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+
+            android:divider="@color/backgroundColor"
+            android:dividerHeight="1dp"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none"></ListView>
+    </com.yuqun.main.component.refresh.PtrClassicFrameLayout>
+    <!--</LinearLayout>
+</ScrollView>-->
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="@dimen/ui_10_dip">
+
+    <TextView
+        android:id="@+id/task_deposit_txt_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="为什么收保证金?"
+        android:textSize="@dimen/ui_15_dip"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/task_deposit_txt_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="答:为了保证一些高额奖金任务的完成有效性。"
+        android:textColor="@color/textMain"
+        android:textSize="@dimen/ui_14_dip"/>
+
+    <ImageView
+        android:id="@+id/task_deposit_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/ui_10_dip"/>
+
+
+</LinearLayout>

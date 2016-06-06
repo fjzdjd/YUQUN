@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#9000"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="2dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/corners_pop"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/backgroundColor">
+
+            <ImageView
+                android:id="@+id/pop_close"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:gravity="right|center_vertical"
+                android:src="@mipmap/icon_close"/>
+        </RelativeLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/task_pop_all_img"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@mipmap/icon_right"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/task_pop_all_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="友情提示:如果任务未完成,将会扣除3点信誉值"
+                android:textSize="14dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_marginTop="20dp"
+                      android:orientation="horizontal"
+                      android:padding="10dp">
+
+            <Button
+                android:id="@+id/task_pop_all_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/corners_bg_orange"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/task_pop_all_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/corners_bg_orange_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="取消"
+                android:textColor="@color/orange_text"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

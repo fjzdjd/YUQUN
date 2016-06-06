@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/task_share_layout"
+    tools:context="com.yuqun.main.ui.task.TaskLinkPreviewActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/maincolor">
+
+        <ImageView
+            android:id="@+id/task_share_link_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@mipmap/icon_backblue"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/task_share_link_txt_title"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/task_share_link_txt_wx"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="分享"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+
+    <com.yuqun.main.view.ProgressWebView
+        android:id="@+id/task_link_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"/>
+
+
+</LinearLayout>

@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".ui.task.TaskAllDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/backgroundColor"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/maincolor"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/task_audit_img_back"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@mipmap/icon_backblue"/>
+
+                <TextView
+                    android:id="@+id/task_audit_txt_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="￥"
+                        android:textColor="@android:color/white"
+                        android:textSize="45sp"/>
+
+
+                    <TextView
+                        android:id="@+id/task_audit_txt_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="@android:color/white"
+                        android:textSize="45sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="bottom"
+                        android:text="/单"
+                        android:textColor="@android:color/white"
+                        android:textSize="30sp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/task_audit_txt_expectTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#779ec6"
+                    android:textSize="18sp"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="接单截止日期"
+                            android:textColor="#779ec6"
+                            android:textSize="11sp"/>
+
+                        <TextView
+                            android:id="@+id/task_audit_txt_endDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:textColor="@android:color/white"
+                            android:textSize="11sp"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:text="接单倒计时"
+                            android:textColor="#779ec6"
+                            android:textSize="11sp"/>
+
+                        <TextView
+                            android:id="@+id/task_audit_txt_countdown"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:textColor="@android:color/white"
+                            android:textSize="11sp"/>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <!--任务详情-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/ui_10_dip"
+                    android:text="任务详情"
+                    android:textColor="@color/maincolor"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/ui_10_dip"
+                    android:layout_marginEnd="@dimen/ui_10_dip"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="@dimen/ui_10_dip"
+                    android:layout_marginStart="@dimen/ui_10_dip"
+                    android:layout_marginTop="10dp">
+
+                    <WebView
+                        android:id="@+id/task_audit_detail_webHtml"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+
+                <!--使用webview替代-->
+                <TextView
+                    android:id="@+id/task_audit_txt_html"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/ui_10_dip"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                />
+
+
+            </LinearLayout>
+
+
+            <!--完成标准-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/ui_10_dip"
+                    android:text="完成标准"
+                    android:textColor="@color/maincolor"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+
+                    android:id="@+id/task_audit_txt_standard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/ui_10_dip"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                />
+
+
+            </LinearLayout>
+
+
+            <!--任务链接-->
+            <LinearLayout
+                android:id="@+id/task_audit_detail_lyt_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/ui_10_dip"
+                    android:text="任务链接"
+                    android:textColor="@color/maincolor"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/task_audit_detail_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/ui_10_dip"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="9dp"
+                    android:textColor="@color/maincolor"
+                />
+
+
+            </LinearLayout>
+
+
+            <!--任务保证金-->
+            <LinearLayout
+                android:id="@+id/task_audit_lyt_insurance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ui_10_dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="任务保证金"
+                        android:textColor="@color/maincolor"
+                        android:textSize="16dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/task_audit_detail_insurance_guide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/ui_10_dip"
+                        android:text="任务保证金说明"
+                        android:textColor="@color/textMain"/>
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/ui_11_dip"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="接本单任务需要支付保证金:"/>
+
+                    <TextView
+                        android:id="@+id/task_audit_detail_insurance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="19sp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--底部-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@color/backgroundColor"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已有"
+                    android:textColor="@color/textMain"
+                    android:textSize="@dimen/ui_14_dip"/>
+
+                <TextView
+                    android:id="@+id/task_audit_txt_person1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/ui_14_dip"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="接单，还剩"
+                    android:textColor="@color/textMain"
+                    android:textSize="@dimen/ui_14_dip"/>
+
+                <TextView
+                    android:id="@+id/task_audit_txt_person2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/ui_14_dip"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="单"
+                    android:textColor="@color/textMain"
+                    android:textSize="@dimen/ui_14_dip"/>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="已上传任务完成截图，等待审核..."
+                android:textColor="@color/black"
+                android:textSize="@dimen/ui_15_dip"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/corners_bg_blue"
+                android:text="任务完成审核中"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@mipmap/icon_help"/>
+
+                <TextView
+                    android:id="@+id/tv_audit_process"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="任务完成审核说明"
+                    android:textColor="@color/maincolor"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

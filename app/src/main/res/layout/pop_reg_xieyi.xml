@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9000"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/corners_pop"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:background="@drawable/corners_bg_blue2"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="用户协议"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/pop_close"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:gravity="right|center_vertical"
+                android:src="@mipmap/icon_close" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="用户注册并使用鱼群兼职任务系统鱼客之家，成为一名鱼客即表示同意接受《鱼群用户协议》（以下简称“协议”或“本协议”）内全部条款."
+                    android:textColor="@color/colorGray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="1.鱼群可随时自行全权决定更改协议内条款。如条款有任何变更,鱼群将在系统中刊载公告并通知您。如您不同意相关变更，必须停止使用鱼群。您应该仔细阅读修订后的协议条款,并有权选择停止使用鱼群;一旦您继续使用鱼群,则表示您已接受经修订的条款,当您与鱼群发生争议时,应以最新的协议为准"
+                    android:textColor="@color/colorGray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="2.鱼群仅供能够根据相关法律订立具有法律约束力的合约的个人或公司使用。因此，您的年龄必须在十八周岁以上，如不符合本项条件，请勿使用此鱼群。鱼群可随时自行全权决定暂时或永久终止任何人士或公司对鱼群的使用权"
+                    android:textColor="@color/colorGray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="3.用户在鱼群申请开通时需保证：提供的申请开通鱼客权限所提供关于您的信息真实、准确、完整；维持并及时更新个人信息，使其保持真实、准确、完整和反映当前情况。倘若您提供任何不真实、不准确、不完整或不能反映当前情况的资料，或我公司有合理理由怀疑该等资料不真实、不准确、不完整或不能反映当前情况，我公司有权暂停或终止您的注册身份及资料，并拒绝您在目前或将来对鱼群以任何形式使用"
+                    android:textColor="@color/colorGray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="4.用户通过鱼客之家做任务赚外快，需保证任务真实有效完成，如发现以下情况，鱼群有权利冻结账户、并扣除所有账户内的返利奖金:"
+                    android:textColor="@color/colorGray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="①上传图片为虚假图片，或经过PS的"
+                    android:textColor="@color/colorGray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="②采用虚拟用户完成任务"
+                    android:textColor="@color/colorGray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="5.用户不得在鱼群中发表涉及如下的内容"
+                    android:textColor="@color/colorGray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="①反对宪法所确定的基本原则，煽动、抗拒、破坏宪法和法律、行政法规实施的"
+                    android:textColor="@color/colorGray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="②煽动颠覆国家政权，推翻社会主义制度，煽动、分裂国家，破坏国家统一的"
+                    android:textColor="@color/colorGray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="③损害国家荣誉和利益的"
+                    android:textColor="@color/colorGray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="④煽动民族仇恨、民族歧视，破坏民族团结的"
+                    android:textColor="@color/colorGray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="⑤任何包含对种族、性别、宗教、地域内容等歧视的"
+                    android:textColor="@color/colorGray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="⑥捏造或者歪曲事实，散布谣言，扰乱社会秩序的"
+                    android:textColor="@color/colorGray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="⑦宣扬封建迷信、邪教、淫秽、色情、赌博、暴力、凶杀、恐怖、教唆犯罪的"
+                    android:textColor="@color/colorGray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="⑧公然侮辱他人或者捏造事实诽谤他人的，或者进行其他恶意攻击的"
+                    android:textColor="@color/colorGray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="⑨损害国家机关信誉的"
+                    android:textColor="@color/colorGray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="⑩其他违反宪法和法律行政法规的。如若发现违反此规定的行为，您需负全部责任，我公司有权采取相应措施（包括但不仅限删除）同时终止您对鱼群的使用权"
+                    android:textColor="@color/colorGray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6.对于因本公司合理控制范围以外的原因，包括但不限于自然灾害、罢工、骚乱、物质短缺或定量配给、暴动、战争行为、政府行为、通讯或其他设施故障或严重伤亡事故等不可抗力因素，致使本公司对用户的承诺延迟或未能履约的，鱼群不承担任何责任"
+                    android:textColor="@color/colorGray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="7.用户需遵守所有适用茶叶销售行业的法律、法规、条例和规章"
+                    android:textColor="@color/colorGray" />
+            </LinearLayout>
+        </ScrollView>
+        <!-- <ScrollView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:scrollbars="none">
+
+             <com.yuqun.main.view.ListView4ScrollView
+                 android:padding="20dp"
+                 android:id="@+id/lvsv"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:scrollbars="none"></com.yuqun.main.view.ListView4ScrollView>
+         </ScrollView>-->
+    </LinearLayout>
+</LinearLayout>
+
